@@ -256,3 +256,5 @@ ok  	github.com/ringsaturn/tzf	7.995s
 - <https://github.com/tidwall/geojson>
 - <https://github.com/jannikmi/timezonefinder>
 - <https://github.com/evansiroky/timezone-boundary-builder>
+
+Evaluation E8: dependency upgrade scanned by Migratowl.
