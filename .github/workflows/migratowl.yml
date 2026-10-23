@@ -1,0 +1,19 @@
+name: migratowl
+on:
+  pull_request:
+    branches: [e8-ci]
+concurrency:
+  group: migratowl-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+  pull-requests: write
+  statuses: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bitkaio/migratowl-action@v1
+        with:
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          model: claude-haiku-5-5
