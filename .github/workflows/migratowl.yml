@@ -17,3 +17,4 @@ jobs:
         with:
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
           model: claude-haiku-5-5
+          scan-trigger: deps-changed
