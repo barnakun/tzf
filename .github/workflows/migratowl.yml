@@ -17,4 +17,6 @@ jobs:
         with:
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
           model: claude-haiku-5-5
-          scan-trigger: deps-changed
+          scan-trigger: always
+          check-deps: "github.com/tidwall/geojson"
+          target-versions: '{"github.com/tidwall/geojson": "v1.4.6"}'
